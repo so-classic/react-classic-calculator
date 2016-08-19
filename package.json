@@ -1,0 +1,61 @@
+{
+  "name": "react-classic-calculator",
+  "version": "0.0.0",
+  "description": "Classic iOS calculator written in React",
+  "main": "lib/index.js",
+  "author": "Steve Mao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevemao/react-classic-calculator.git"
+  },
+  "devDependencies": {
+    "babel-jest": "^14.1.0",
+    "eslint": "^3.3.1",
+    "eslint-config-keystone": "^2.4.0",
+    "eslint-plugin-react": "^6.1.2",
+    "gulp": "^3.9.1",
+    "jest-cli": "^14.1.0",
+    "react": "^15.3",
+    "react-addons-test-utils": "^15.3",
+    "react-component-gulp-tasks": "^0.7.7",
+    "react-dom": "^15.3"
+  },
+  "peerDependencies": {
+    "react": "^15.3.0"
+  },
+  "browserify-shim": {
+    "react": "global:React"
+  },
+  "scripts": {
+    "build": "gulp clean && NODE_ENV=production gulp build",
+    "bump": "gulp bump",
+    "bump:major": "gulp bump:major",
+    "bump:minor": "gulp bump:minor",
+    "examples": "gulp dev:server",
+    "lint": "eslint ./; true",
+    "publish:site": "NODE_ENV=production gulp publish:examples",
+    "release": "NODE_ENV=production gulp release",
+    "start": "gulp dev",
+    "test": "jest; true",
+    "watch": "gulp watch:lib"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/fbjs",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils"
+    ],
+    "testPathDirs": [
+      "<rootDir>/src"
+    ]
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "calculator",
+    "ios"
+  ]
+}
