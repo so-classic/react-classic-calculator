@@ -1,6 +1,8 @@
 react-classic-calculator
 ====================
 
+# WIP, only imported the initial files but not a component yet.
+
 Classic iOS calculator written in [React](http://facebook.github.io/react/index.html)
 
 
