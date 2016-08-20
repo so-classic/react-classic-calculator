@@ -52,6 +52,10 @@ var Calculator = require('react-classic-calculator');
 />
 ```
 
+## Credit
+
+[Michael Jackson](https://twitter.com/mjackson/status/759039237412958209)
+
 ## License
 
 (The MIT License)
